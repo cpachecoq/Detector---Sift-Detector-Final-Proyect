@@ -71,7 +71,7 @@ def upload_video():
     file = request.files['video']
     video_path = os.path.join(UPLOAD_FOLDER, "uploaded_video.mp4")
     file.save(video_path)
-    print("✅ Video recibido y guardado en", video_path)
+    print("Video recibido y guardado en", video_path)
     return "Video subido correctamente", 200
 
 def generate_frames():
